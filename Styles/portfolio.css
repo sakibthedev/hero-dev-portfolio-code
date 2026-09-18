@@ -24,6 +24,7 @@
 
 .btn{
 
+    display: inline-block;
     background-color: #FD6E0A;
     border: none;
     padding: 18px 35px;
@@ -32,12 +33,14 @@
     font-weight: bold;
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .section-heading{
 
     max-width: 827px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .section-heading h2 {
@@ -61,7 +64,7 @@ header {
     padding-top: 51px;
     background-color: #FFF8F3;
     background: url(../images/developer.png),url(../images/header_bg.png) #FFF8F3;
-    background-position: top left, bottom right;
+    background-position: 23px 38px, bottom right;
     background-repeat: no-repeat;
     padding-top: 50px;
 }
@@ -69,7 +72,7 @@ header {
 nav{
 
     width: 71%;
-    max-width: 1140;
+    max-width: 1140px;
     border: 1px solid red;
 
     margin: 0 auto;
@@ -113,7 +116,7 @@ nav .menu a{
 #banner .banner-content h2{
 
     font-size: 45px;
-    font-weight: 600px;
+    font-weight: 600;
     color: #474747;
     margin-bottom: 5px;
 }
@@ -142,7 +145,7 @@ nav .menu a{
     vertical-align: middle;
 }
 
-#about{
+#about, #Skills, #resume{
 
     padding-top: 130px;
 }
@@ -176,4 +179,163 @@ nav .menu a{
 
     font-size: 20px;
 
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+#Skills .Skills-container{
+
+    width: 71%;
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+#Skills .Skills-container .section-heading{
+
+    max-width: 827px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#Skills .Skills-container .Skill-box{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+}
+
+.Skill-box .Skill-card{
+
+    padding: 30px;
+    max-width: 267px;
+    width: 300px;
+    height: 300px;
+    background-color: #FFF8F3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+}
+
+.Skill-card h3{
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: #000000;
+}
+
+
+.Skill-card img{
+
+    max-width: 44px;
+    margin-bottom: 30px;
+}
+
+.Skill-card p{
+
+    font-size: 16px;
+    line-height: 18px;
+    color: #757575;
+}
+
+#resume .resume-container{
+    width:71%;
+    max-width: 1140px;
+    margin: 113px auto 0;
+    display: flex;
+    gap: 24px;
+}
+
+.resume-container hr{
+    margin: 30px 0;
+}
+
+
+
+.section-title{
+    color:#474747;
+    font-size: 30px;
+    margin-bottom: 30px;
+
+}
+
+.resume-card{
+    max-width: 511px;
+    margin-right: 47px;
+}
+
+.education,
+.experience{
+    flex: 1;
+}
+
+.resume-card .card-title {
+    font-size:25px;
+    font-weight: bold;
+    margin-bottom:10px;
+    color:#474747;
+}
+
+.resume-card .card-info {
+    font-size:20px;
+    font-weight: 600;
+    margin-bottom:20px;
+    color:#757575;
+}
+
+.resume-card .card-text {
+    font-size:16px;
+    line-height: 28px;
+    color:#757575;
+}
+
+footer {
+    margin-top: 130px;
+    background-color: #FFF8F3;
+    padding:130px 0;
+}
+
+footer .footer-container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 116px;
+}
+
+.footer-container h2{
+    color:#181818;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+
+.footer-container .social {
+ 
+    max-width: 562px;
+}
+
+.footer-container .social p{
+    color:#474747;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.footer-container .icons a{
+
+    margin-right: 24px;
+
+}
+
+.footer-container form input[type="text"],
+.footer-container form textarea{
+    width: 461px;
+    padding: 18px 31px;
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 5px;
+
+    color:#474747;
 }
